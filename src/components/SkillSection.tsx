@@ -46,13 +46,13 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
 
   return (
     <article
-      className={`h-auto rounded-2xl p-32 pt-16 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
+      className={`h-auto rounded-2xl p-16 pt-32 grid grid-cols-3 gap-10 relative z-10 max-lg:w-full max-lg:grid-cols-2 max-lg:p-8  max-lg:pt-32 ${
         theme === "dark"
           ? "bg-[--blackblue] dark-mode-shadow"
           : "bg-[--icewhite] dark-shadow"
       }`}
     >
-      {/* <div
+      <div
         className={`absolute top-10 left-1/2 transform -translate-x-1/2 px-4 py-2  rounded-t-xl `}
       >
         <p className="font-black text-4xl">
@@ -60,7 +60,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
           {skillsData[0].skillsTitle}
           <span className="text-[--orange]">/&gt;</span>
         </p>
-      </div> */}
+      </div>
       {skillsData[0].skills.map((skill, index) => (
         <div
           key={index}
@@ -74,7 +74,7 @@ const SkillSection: React.FC<SkillSectionProps> = ({ skillsData, theme }) => {
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.animation = "pulse 2s infinite";
-            e.currentTarget.style.transform = "scale(2)";
+            e.currentTarget.style.transform = "scale(1)";
             document.documentElement.style.setProperty(
               "--box-shadow-color",
               `${getSkillColor(theme, skill)}b3`

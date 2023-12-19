@@ -36,7 +36,7 @@ const TechStack: React.FC = () => {
               opacity: opacityProgess,
             }}
           >
-            <h2 className="font-black mb-6">
+            <h2 className="font-black mb-3">
               <span className="text-[--huevopato]">&lt;</span>{language === "ES"
                 ? "Habilidades"
                 : "Skills"}
