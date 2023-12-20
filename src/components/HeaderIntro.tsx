@@ -12,26 +12,24 @@ const HeaderIntro: React.FC = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
+
+    
     <section
-      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
+      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-max max-lg:text-sm"
       ref={ref}
       id="home"
     >
-  
-
-      
-      <h1 className="max-lg:w-1/2">
+    
+        
+     
+      <h1 className="max-lg:w-1/2 ">
         {language === "ES"
           ? headerIntroData.title.ES
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
-      <h3  className="max-lg:w-1/2">{language === "ES"
-          ? headerIntroData.subtitle.ES
-          : headerIntroData.subtitle.en}</h3>
-          <br></br>
-          <br></br>
-      <p className="w-1/2 text-center max-lg:w-auto">
+     
+      <p className="w-1/2 text-center max-lg:text-2xl">
         {language === "ES"
           ? headerIntroData.description.ES
           : headerIntroData.description.en}
@@ -53,7 +51,9 @@ const HeaderIntro: React.FC = () => {
         ))}
       </div>
       <div className="scroll-down-container animate-bounce flex gap-6">
-        <BsMouse className="text-[4rem]" />
+        <BsMouse className="text-[2.6rem]" />
+        <br></br>
+        <br></br>
       </div>
     </section>
   );

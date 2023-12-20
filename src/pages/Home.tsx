@@ -28,10 +28,19 @@ const Home: React.FC = () => {
           />
           <Suspense fallback={<div>Loading...</div>}>
             <LazySiteBarLeft />
+            <br></br>
+            <br></br>
+            <br></br>
             <LazyHeaderIntro />
             <LazySiteBarRight />
           </Suspense>
         </header>
+        <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
         <main className="relative">
           <Suspense fallback={<div>Loading...</div>}>
           <hr></hr>
