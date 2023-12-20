@@ -70,7 +70,8 @@ const Contact: React.FC = () => {
             <br></br>
             <br></br>
             <br></br>
-     <a href="mailto:carlosfromerom@gmail.com" target="_blank">✉ :&nbsp;   carlosfromerom@gmail.com</a><br></br>
+            {/* ✉ :&nbsp;  */}
+     <a href="mailto:carlosfromerom@gmail.com" target="_blank"> <strong>carlosfromerom@gmail.com</strong></a><br></br>
      <a href="https://www.linkedin.com/in/carlos-romero-033a24248/" target="_blank"><strong>in:</strong>  &nbsp;Carlos Romero</a>
     
           </motion.div>
