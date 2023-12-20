@@ -29,7 +29,7 @@ const HeaderIntro: React.FC = () => {
       <h3>{language === "ES"
           ? headerIntroData.subtitle.ES
           : headerIntroData.subtitle.en}</h3>
-      <p className="w-1/2 text-center max-lg:w-auto">
+      <p className="w-1/2 text-center max-lg:w-hidden">
         {language === "ES"
           ? headerIntroData.description.ES
           : headerIntroData.description.en}
@@ -51,7 +51,7 @@ const HeaderIntro: React.FC = () => {
         ))}
       </div>
       <div className="scroll-down-container animate-bounce flex gap-6">
-        <BsMouse className="text-[4rem]" />
+        <BsMouse className="text-[2.6rem]" />
       </div>
     </section>
   );

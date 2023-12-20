@@ -127,7 +127,7 @@ const ProjectSlider: React.FC = () => {
                         )}
                       </div>
                     </div>
-                    <div className="buttons flex gap-10">
+                    <div className="buttons flex gap-10 max-lg:flex-col">
                       <Button
                         label="Live Demo"
                         link={project.deploymenturl}
