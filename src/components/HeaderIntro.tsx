@@ -36,7 +36,7 @@ const HeaderIntro: React.FC = () => {
       </p>
 
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
-        {headerIntroData.buttons.map((button, index) => (
+          {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
             label={language === "ES" ? button.label.ES : button.label.en}
