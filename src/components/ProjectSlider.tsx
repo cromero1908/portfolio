@@ -1,7 +1,7 @@
-
 import oraclebg from "../assets/img/redwoodOracleBanner.webp";
 import React, { useRef } from "react";
 import Button from "./Button";
+import LiveTicker from "./ParallaxText";
 import { projectsData, toastMessages } from "../assets/lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards, Pagination } from "swiper/modules";
@@ -36,7 +36,7 @@ const ProjectSlider: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="skill-banner relative overflow-x-clip h-100% w-full flex flex-col gap-2 "
+        className=" skill-banner relative overflow-x-clip h-100% w-full flex flex-col gap-2 "
         id="projects"
         ref={ref}
       >
@@ -71,14 +71,14 @@ const ProjectSlider: React.FC = () => {
                 textAlign: "center",
               }}
             >
-              <h2 className="text-[--white] mt-16 mb-8">
-                <span className="text-[--huevopato]">&lt;</span>
-                {language === "ES" ? "Proyectos" : "Projects"}
-                <span className="text-[--huevopato]">/&gt;</span>
+              <p className="text-[--white] mt-16 mb-6">
+                <span className="text-[--orange]">&lt;</span>
+                {language === "ES" ? "Projekte" : "Projects"}
+                <span className="text-[--orange]">/&gt;</span>
+              </p>
+              <h2 className="text-[--white] mb-16">
+                {language === "ES" ? "Meine Projekte" : "My Projects"}
               </h2>
-              <h1 className="text-[--white] mb-16">
-                {language === "ES" ? "Mis Proyectos" : "My Projects"}
-              </h1>
             </motion.div>
             <Swiper
               effect={"cards"}
@@ -127,7 +127,7 @@ const ProjectSlider: React.FC = () => {
                         )}
                       </div>
                     </div>
-                    <div className="buttons flex gap-10 max-lg:flex-col">
+                    <div className="buttons flex gap-10">
                       <Button
                         label="Live Demo"
                         link={project.deploymenturl}
@@ -213,6 +213,7 @@ const ProjectSlider: React.FC = () => {
             ))}
           </div>
         </div>
+        <LiveTicker />
       </section>
       <ReactTooltip
         place="top"
