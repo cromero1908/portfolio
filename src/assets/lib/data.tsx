@@ -58,15 +58,15 @@ export const headerIntroData = {
       icon: FiMail,
       color: "main-btn",
     },
-    // {
-    //   name: "Projects",
-    //   label: {
-    //     ES: "Meine Projekte",
-    //     en: "My Projects",
-    //   },
-    //   icon: FiGithub,
-    //   color: "secondary-btn",
-    // },
+    {
+      name: "Projects",
+      label: {
+        ES: "Meine Projekte",
+        en: "My Projects",
+      },
+      icon: FiGithub,
+      color: "secondary-btn",
+    },
   ],
   profilepicture: profilepicture,
 } as const;

@@ -40,7 +40,7 @@ const Button: React.FC<ButtonProps> = ({
       <Link to={link || ""} className="no-underline">
         <button {...commonProps}>
           {IconSVGComponent ? (
-            <IconSVGComponent className={"w-max h-10"} />
+            <IconSVGComponent className={" h-10"} />
           ) : (
             <img
               src={buttoncolor || ""}

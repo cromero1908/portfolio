@@ -1,7 +1,6 @@
 import oraclebg from "../assets/img/redwoodOracleBanner.webp";
 import React, { useRef } from "react";
 import Button from "./Button";
-import LiveTicker from "./ParallaxText";
 import { projectsData, toastMessages } from "../assets/lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards, Pagination } from "swiper/modules";
@@ -72,12 +71,12 @@ const ProjectSlider: React.FC = () => {
               }}
             >
               <p className="text-[--white] mt-16 mb-6">
-                <span className="text-[--orange]">&lt;</span>
-                {language === "ES" ? "Projekte" : "Projects"}
-                <span className="text-[--orange]">/&gt;</span>
+                <span className="text-[--huevopato]">&lt;</span>
+                {language === "ES" ? "Proyectos" : "Projects"}
+                <span className="text-[--huevopato]">/&gt;</span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "ES" ? "Meine Projekte" : "My Projects"}
+                {language === "ES" ? "Mis proyectos" : "My Projects"}
               </h2>
             </motion.div>
             <Swiper
@@ -110,7 +109,7 @@ const ProjectSlider: React.FC = () => {
                     </p>
                     <div className="technologies">
                       <h3>
-                        {language === "ES" ? "Technologien" : "Technologies"}
+                        {language === "ES" ? "Tecnologías" : "Technologies"}
                       </h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
@@ -136,13 +135,13 @@ const ProjectSlider: React.FC = () => {
                         iconcolor={project.colors.icon}
                         onClick={notifyServerRequest}
                       />
-                      <Button
+                      {/* <Button
                         label="Github Repository"
                         link={project.githuburl}
                         iconSVG={project.githubicon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
-                      />
+                      /> */}
                     </div>
                   </div>
 
@@ -168,7 +167,7 @@ const ProjectSlider: React.FC = () => {
                   alt={project.image}
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
-                <div className="buttons flex gap-10 max-lg:flex-col">
+                <div className="buttons flex  gap-4 max-lg:flex-col md:gap-6">
                   <Button
                     label="Live Demo"
                     link={project.deploymenturl}
@@ -176,13 +175,15 @@ const ProjectSlider: React.FC = () => {
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
                   />
-                  <Button
-                    label="Github Repository"
+                  {/* <Button
+                    label=  {<p className="text-white  max-lg:text-4xl">{language === "ES"
+                    ? 'Github Repository'
+                    : ''}</p> }
                     link={project.githuburl}
                     iconSVG={project.githubicon}
                     buttoncolor={project.colors.main}
                     iconcolor={project.colors.icon}
-                  />
+                  /> */}
                 </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "ES"
@@ -192,7 +193,7 @@ const ProjectSlider: React.FC = () => {
 
                 <div className="technologies">
                   <h3 className="text-white">
-                    {language === "ES" ? "Technologien" : "Technologies"}
+                    {language === "ES" ? "Tecnologías" : "Technologies"}
                   </h3>
                   <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(
@@ -213,14 +214,14 @@ const ProjectSlider: React.FC = () => {
             ))}
           </div>
         </div>
-        <LiveTicker />
+       
       </section>
       <ReactTooltip
         place="top"
         id="my-tooltip"
         style={{
           fontSize: "1.5rem",
-          backgroundColor: "var(--orange)",
+          backgroundColor: "var(--huevopato)",
         }}
       />
     </React.Fragment>

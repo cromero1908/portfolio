@@ -26,9 +26,11 @@ const HeaderIntro: React.FC = () => {
           : headerIntroData.title.en}
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
-      <h3>{language === "ES"
+      <h3  className="max-lg:w-1/2">{language === "ES"
           ? headerIntroData.subtitle.ES
           : headerIntroData.subtitle.en}</h3>
+          <br></br>
+          <br></br>
       <p className="w-1/2 text-center max-lg:w-auto">
         {language === "ES"
           ? headerIntroData.description.ES
@@ -36,7 +38,7 @@ const HeaderIntro: React.FC = () => {
       </p>
 
       <div className="button-container flex items-center justify-center mr-8 gap-10 mb-12 max-lg:flex-col max-lg:items-center">
-          {headerIntroData.buttons.map((button, index) => (
+        {headerIntroData.buttons.map((button, index) => (
           <Button
             key={index}
             label={language === "ES" ? button.label.ES : button.label.en}
