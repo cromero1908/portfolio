@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
 import { contactData } from "../assets/lib/data.tsx";
-import { useSectionInView } from "../assets/lib/hooks";
+
 import { useLanguage } from "../context/language-context";
 import { motion, useScroll, useTransform } from "framer-motion";
-
 
 
 const Contact: React.FC = () => {
  
 
 
-  const { ref } = useSectionInView("Contact");
+
   const { language } = useLanguage();
 
 
@@ -32,13 +31,10 @@ const Contact: React.FC = () => {
   return (
     <React.Fragment>
       <section
-        className="contact-container w-full min-[1921px]:px-[55rem] mt-16"
+        className="contact-container w-full px-5 md:px-10 lg:px-16 xl:px-32 mt-16"
         id="contact"
       >
-        <div
-          className="title-container flex flex-col gap-6 justify-center items-center py-16  max-lg:p-16"
-          ref={ref}
-        >
+       
           <motion.div
             ref={animationReference}
             style={{
@@ -71,11 +67,21 @@ const Contact: React.FC = () => {
             <br></br>
             <br></br>
             {/* ✉ :&nbsp;  */}
-     <a href="mailto:carlosfromerom@gmail.com" target="_blank"> <strong>carlosfromerom@gmail.com</strong></a><br></br>
-     <a href="https://www.linkedin.com/in/carlos-romero-033a24248/" target="_blank"><strong>in:</strong>  &nbsp;Carlos Romero</a>
-    
+            <div className="text-sm sm:text-lg max-w-full sm:max-w-screen-md mx-auto p-4">
+    <div className="flex flex-col items-center">
+      
+      <a href="mailto:carlosfromerom@gmail.com" target="_blank" className="text-center">
+        <strong className="break-words">carlosfromerom@gmail.com</strong>
+      </a><br></br>
+      <a href="https://www.linkedin.com/in/carlos-romero-033a24248/" target="_blank" className="mt-2">
+        <strong className="break-words">in: Carlos Romero</strong>
+      </a>
+    </div>
+  </div>
+
+
           </motion.div>
-        </div>
+      
         
       </section>
     </React.Fragment>
