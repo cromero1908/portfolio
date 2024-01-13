@@ -135,6 +135,8 @@ const ProjectSlider: React.FC = () => {
                         iconcolor={project.colors.icon}
                         onClick={notifyServerRequest}
                       />
+                      
+                      
                       {/* <Button
                         label="Github Repository"
                         link={project.githuburl}
@@ -142,6 +144,7 @@ const ProjectSlider: React.FC = () => {
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
                       /> */}
+
                     </div>
                   </div>
 
@@ -168,13 +171,15 @@ const ProjectSlider: React.FC = () => {
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
                 <div className="buttons flex  gap-4 max-lg:flex-col md:gap-6">
-                  <Button
-                    label="Live Demo"
-                    link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
+                <Button
+                        label="Live Demo"
+                        link={project.deploymenturl}
+                        iconSVG={project.deploymenticon}
+                        buttoncolor={project.colors.main}
+                        iconcolor={project.colors.icon}
+                        onClick={notifyServerRequest}
+                       
+                      />
                   {/* <Button
                     label=  {<p className="text-white  max-lg:text-4xl">{language === "ES"
                     ? 'Github Repository'

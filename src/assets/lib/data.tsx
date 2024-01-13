@@ -21,7 +21,7 @@ import jwticon from "../../assets/icons/jwticon.svg";
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
+import tastyMockup from "../../assets/img/ttl_screen.png";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me2.webp";
@@ -90,7 +90,7 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
+    deploymenturl: "https://carlosromero.tech/ords/r/portfolio/time-tracker-live/login",
     githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
     githubicon: FiGithub,
     deploymenticon: FiLink,
