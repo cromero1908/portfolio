@@ -5,7 +5,7 @@ import { useSectionInView } from "../assets/lib/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 import { useLanguage } from "../context/language-context";
 import { BsMouse } from "react-icons/bs";
-
+import { FiUser} from "react-icons/fi";
 const HeaderIntro: React.FC = () => {
   const { language } = useLanguage();
   const { ref } = useSectionInView("Home", 0.5);
@@ -48,10 +48,19 @@ const HeaderIntro: React.FC = () => {
               setTimeOfLastClick(Date.now());
             }}
           />
+          
         ))}
+        <Button label={language === "ES"
+                ? "Descargar HV"
+                : "Download CV"} 
+                iconSVG={FiUser} 
+                link="https://carlosromero.tech/assets/HV_CARLOSROMERO.pdf"
+                 is_blank="_blank"
+                 buttoncolor="main-btn"></Button>
+       
       </div>
       <div className="scroll-down-container animate-bounce flex gap-6">
-        <BsMouse className="text-[2.6rem]" />
+        <BsMouse className="text-[2.6rem] max-lg:items-center" />
         <br></br>
         <br></br>
       </div>

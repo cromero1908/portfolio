@@ -13,6 +13,7 @@ interface ButtonProps {
   buttonhovercolor?: string;
   type?: "button" | "submit" | "reset";
   elementType?: "input" | "button";
+  is_blank?: string;
   
 }
 
@@ -26,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   buttonhovercolor,
   type,
   elementType,
+  is_blank,
 }) => {
   const commonProps = {
     onClick,
@@ -38,7 +40,7 @@ const Button: React.FC<ButtonProps> = ({
     return <input {...commonProps} value={value}></input>;
   } else {
     return (
-      <Link to={link || ""} className="no-underline ">
+      <Link to={link || ""} className="no-underline " target={is_blank}>
         <button {...commonProps}>
           {IconSVGComponent ? (
             <IconSVGComponent className={" h-10"} />

@@ -5,30 +5,28 @@ import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import oracleicon from "../../assets/icons/oracleicon.svg";
-import reacticon from "../../assets/icons/reacticon.svg";
+
 import plsqlicon from "../../assets/icons/plsqlicon.svg";
 import gitdark from "../../assets/icons/gitdark.svg";
 import gitWhite from "../../assets/icons/gitWhite.svg";
 import ordsicon from "../../assets/icons/ordsicon.svg";
-import mongodbicon from "../../assets/icons/mongoicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
-import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
+import pwaicon from "../../assets/icons/pwa_icon.svg";
+
+import apexicon from "../../assets/icons/apex_icon.svg";
+
+import jaspericon from "../../assets/icons/jasper_icon.svg";
+
 import wordpressicon from "../../assets/icons/wordpressicon.svg";
 import shopifyicon from "../../assets/icons/shopifyicon.svg";
 import webflowicon from "../../assets/icons/webflowicon.svg";
 import tastyMockup from "../../assets/img/ttl_screen.png";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import assetsicon from "../../assets/img/assetsicon.png";
+import complianceicon from "../../assets/img/compliance_example.png";
+import ddicon from "../../assets/img/DDicon.png";
 import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
-import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
@@ -46,7 +44,7 @@ export const headerIntroData = {
   
   description: {
     ES: "Desarrollador Oracle con sólidas bases en lógica de programación y amplia experiencia en OCI y Oracle Apex, creando aplicaciones complejas con Javascript, CSS y PL/SQL. Apasionado a nuevas tecnologías, trabajo en equipo y bajo presión. Conocimiento extenso de PL/SQL para el manejo de datos en bases Oracle. Experiencia en desarrollo ágil (Scrum).",
-    en: "Oracle developer with solid foundations in programming logic and extensive experience in Oracle Apex, creating complex applications with Javascript, CSS and PL/SQL. Expertise in OCI for resource management. Adaptable to new technologies, teamwork and under pressure. Extensive knowledge of PL/SQL for data management in Oracle databases. Experience in agile development (Scrum) and passionate about the latest technologies.",
+    en: "Oracle developer with solid foundations in programming logic and extensive experience in Oracle Apex, creating complex applications with Javascript, CSS and PL/SQL. Expertise in OCI for resource management. Adaptable to new technologies, teamwork and under pressure. Extensive knowledge of PL/SQL for data management in Oracle databases. Experience in agile development (Scrum).",
   },
   buttons: [
     {
@@ -82,12 +80,9 @@ export const projectsData = [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Oracle APEX", icon: apexicon },
+      { name: "PWA", icon: pwaicon },
+
     ],
     image: tastyMockup,
     deploymenturl: "https://carlosromero.tech/ords/r/portfolio/time-tracker-live/login",
@@ -102,26 +97,21 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
+    title: "Registro Proveedores",
     description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+      "Esta es una aplicacion  en la cual una empresa puede automatizar u organizar el sistema de Debida Diligencia al momento de contratar o trabajar con un tercero o proveedor. Esta aplicacion tiene un sistema de aprobacion donde se dan niveles (Gerente, aprobador, proveedor). Donde el proveedor realizar una solicitud de registro, y dependiendo del pais se le asigna un aprobador. La aplicacion cuenta con manejo de documentos en solicitud, escalamientos, comentarios y estados de solicitud.",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "This is an application in which a company can automate or organize the Due Diligence system when hiring or working with a third party or supplier. This application has an approval system where levels are given (Manager, approver, supplier). Where the provider makes a registration request, and depending on the country an approver is assigned. The application has document management in applications, escalations, comments and application statuses.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      { name: "Oracle APEX", icon: apexicon },
+      { name: "Jasper Report", icon: jaspericon },
+      
     ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
+    image: ddicon,
+    deploymenturl: "https://carlosromero.tech/ords/r/portfolio/registroproveedores/login",
     githuburl:
       "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
     githubicon: FiGithub,
@@ -134,26 +124,45 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "VeranoAssets",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "Una aplicacion para gestionar y organizar el inventario o activos que tiene una empresa. La aplicacion permite tomar fotos con cada registro de inventario creado, asignar items a usuarios creados, visualizar los usuarios con asignaciones, categorizar cada elemento, Ver un reporte global con la visualizacion de fotos (o evidencias), asignacion de valor monetario por item. ",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "An application to manage and organize the inventory or assets that a company has. The application allows you to take photos with each inventory record created, assign items to created users, view users with assignments, categorize each item, View a global report with the display of photos (or evidence), assign monetary value per item.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
       { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Oracle APEX", icon: apexicon },
+      { name: "PWA", icon: pwaicon },
     ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
+    image: assetsicon,
+    deploymenturl: "https://carlosromero.tech/ords/r/portfolio/veranoassets/login",
+    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Compliance Connect",
+    description:
+      "Esta es una aplicacion que contiene dos funcionalidades, gestor documental y canal de denuncias. El gestor documental esta enfocado a la parte de audotoria de lectura de documentos en una empresa, este permite organizar carpetas y documentos dentro de estas,visualizar documentos por medio de una API, tiene un modulo donde muestra el estado de lectura de documentos de los usuarios presentes, con nombre y fecha. El canal de denuncias es un formulario donde se ingresara los datos de la denuncia a realizar, esta puede ser de forma anonima o con un usuario propio.",
+    description_EN:
+      "This is an application that contains two functionalities, a document manager and a complaints channel. The document manager is focused on the auditing part of document reading in a company, it allows you to organize folders and documents within them, view documents through an API, it has a module where it shows the status of users' document reading present, with name and date. The complaints channel is a form where the data of the complaint to be made will be entered, this can be anonymous or with your own user.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "Oracle APEX", icon: apexicon },
+      { name: "PWA", icon: pwaicon },
+    ],
+    image: complianceicon,
+    deploymenturl: "https://carlosromero.tech/ords/r/portfolio/compliance-connect/login",
     githuburl: "https://github.com/AlpayC/Furniture_MERN",
     githubicon: FiGithub,
     deploymenticon: FiLink,
@@ -219,6 +228,12 @@ export const skillsDataWeb = [
         hash: "#Oracle REST Data Services",
         icon: ordsicon,
         color: "#d75418",
+      },
+      {
+        title: "Oracle APEX",
+        hash: "#Oracle APEX",
+        icon: apexicon,
+        color: "#18d729",
       },
       
     ],

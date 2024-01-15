@@ -1,10 +1,10 @@
 import oraclebg from "../assets/img/redwoodOracleBanner.webp";
 import React, { useRef } from "react";
 import Button from "./Button";
-import { projectsData, toastMessages } from "../assets/lib/data";
+import { projectsData } from "../assets/lib/data";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards, Pagination } from "swiper/modules";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
@@ -24,13 +24,13 @@ const ProjectSlider: React.FC = () => {
   });
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  const notifyServerRequest = () => {
-    if (language === "ES") {
-      toast.info(toastMessages.loadingProject.ES);
-    } else {
-      toast.info(toastMessages.loadingProject.en);
-    }
-  };
+  // const notifyServerRequest = () => {
+  //   if (language === "ES") {
+  //     toast.info(toastMessages.loadingProject.ES);
+  //   } else {
+  //     toast.info(toastMessages.loadingProject.en);
+  //   }
+  // };
 
   return (
     <React.Fragment>
@@ -128,12 +128,13 @@ const ProjectSlider: React.FC = () => {
                     </div>
                     <div className="buttons flex gap-10">
                       <Button
+                      is_blank="_blank"
                         label="Live Demo"
                         link={project.deploymenturl}
                         iconSVG={project.deploymenticon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
-                        onClick={notifyServerRequest}
+                        // onClick={notifyServerRequest}
                       />
                       
                       
@@ -172,12 +173,13 @@ const ProjectSlider: React.FC = () => {
                 />
                 <div className="buttons flex  gap-4 max-lg:flex-col md:gap-6">
                 <Button
+                is_blank="_blank"
                         label="Live Demo"
                         link={project.deploymenturl}
                         iconSVG={project.deploymenticon}
                         buttoncolor={project.colors.main}
                         iconcolor={project.colors.icon}
-                        onClick={notifyServerRequest}
+                        
                        
                       />
                   {/* <Button
