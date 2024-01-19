@@ -54,7 +54,9 @@ const HeaderIntro: React.FC = () => {
                 ? "Descargar HV"
                 : "Download CV"} 
                 iconSVG={FiUser} 
-                link="https://carlosromero.tech/assets/HV_CARLOSROMERO.pdf"
+                link={language === "ES"
+                ? "https://carlosromero.tech/assets/HV_CARLOSROMERO_ES.pdf"
+                : "https://carlosromero.tech/assets/HV_CARLOSROMERO_EN.pdf"} 
                  is_blank="_blank"
                  buttoncolor="main-btn"></Button>
        

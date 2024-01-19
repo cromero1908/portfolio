@@ -73,7 +73,7 @@ const Contact: React.FC = () => {
       <a href="mailto:carlosfromerom@gmail.com" target="_blank" className="text-center">
         <strong className="break-words">carlosfromerom@gmail.com</strong>
       </a><br></br>
-      <a href="https://www.linkedin.com/in/carlos-romero-033a24248/" target="_blank" className="mt-2">
+      <a href="https://www.linkedin.com/in/carlosromero26/" target="_blank" className="mt-2">
         <strong className="break-words">in: Carlos Romero</strong>
       </a>
     </div>

@@ -301,7 +301,7 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/carlos-romero-033a24248/",
+    link: "https://www.linkedin.com/in/carlosromero26/",
     icon: FiLinkedin,
     altimgname: "linkedin",
     width:"500"
